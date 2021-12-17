@@ -20,6 +20,8 @@ To test the code you can run the test modules that are included ran by:
   python "test_covid_data_handler.py", 
   python "test_news_data_handling.py"
   
+ GitHub link is "https://github.com/JustinBeare/Covid-Scheduler"
+  
 The program uses the default template for the website given from exeter university
 
 The program also uses the nhs picture from their foud on the link "https://play.google.com/store/apps/details?id=uk.nhs.covid19.production&hl=en_US&gl=US"
