@@ -1,0 +1,12 @@
+{
+    "apiKeys" : {
+        "covid19ApiKey" : "bcfd325752134473a8e18974a2298bc5"
+    },
+    "DebugOption" : false,
+    "LocationData" : {
+        "location-type" : "ltla",
+        "location" : "Exeter",
+        "nation" : "England"
+    }
+
+}
