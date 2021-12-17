@@ -116,8 +116,10 @@ def covid_API_request(location='Exeter',location_type='ltla'):
 
 
     
+''' This will schedule the covid updates '''
 def schedule_covid_updates(update_interval,update_name):
     content = ""
+    ''' Adds all the content that the user has chosen '''
     if request.args.get("repeat"):
         content = "This schedule is repeating" + "<br>"
     else:
@@ -130,6 +132,7 @@ def schedule_covid_updates(update_interval,update_name):
         content += "This schedule will update the news" + "<br>"
     else:
         content += "This schedule will not update the news" + "<br>" 
+    ''' Gets the time and then adds that to the content '''
     current_time = datetime.now()
     hours_interval_str,mins_interval_str = update_interval.split(":")
     hours_interval,hours_converted = intTryParse(hours_interval_str)
@@ -139,6 +142,7 @@ def schedule_covid_updates(update_interval,update_name):
         String_Time = str(time_finish).split(".")
         content += " Scheduled for: " + String_Time[0]
     
+    ''' Creates a dictionary with the information that is needed '''
     schedule_Dict = {
         "title" : update_name,
         "content" : content,
